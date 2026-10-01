@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Umbremacia Wiki - Raijingan</title>
+    <style>
+        :root {
+            --bg-color: #0f1115;
+            --card-bg: #181b22;
+            --accent-color: #6366f1;
+            --text-main: #e2e8f0;
+            --text-muted: #94a3b8;
+            --border-color: #2d3748;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            border-bottom: 2px solid var(--border-color);
+            margin-bottom: 40px;
+        }
+        h1 {
+            color: #818cf8;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .skill-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            transition: transform 0.2s;
+        }
+        .skill-card:hover {
+            transform: translateY(-3px);
+            border-color: var(--accent-color);
+        }
+        .level-tag {
+            background-color: var(--accent-color);
+            color: white;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+        h3 {
+            margin: 5px 0 15px 0;
+            color: #f8fafc;
+            font-size: 1.3rem;
+        }
+        .skill-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+            margin-bottom: 15px;
+            font-size: 0.95rem;
+            background: rgba(0, 0, 0, 0.2);
+            padding: 10px;
+            border-radius: 6px;
+        }
+        .skill-info span strong {
+            color: #cbd5e1;
+        }
+        p {
+            line-height: 1.6;
+            color: var(--text-muted);
+            margin: 0;
+        }
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            border-top: 1px solid var(--border-color);
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Umbremacia RPG</h1>
+        <div class="subtitle">Árvore Oficial do Dōjutsu: Raijingan (O Olho do Trovão)</div>
+    </header>
+
+    <div class="container">
+
+        <!-- Nível 1 -->
+        <div class="skill-card">
+            <span class="level-tag">Nível 1</span>
+            <h3>Zangetsu-no-Zan (Resquícios) & Kaden-Shiki (O Relógio Elétrico)</h3>
+            <div class="skill-info">
+                <span><strong>Tipo:</strong> Passivas Universais</span>
+                <span><strong>Iniciativa:</strong> Passiva</span>
+                <span><strong>Cosmo:</strong> 0</span>
+                <span><strong>Dano:</strong> 20% / Overcharge (10% recuo)</span>
+            </div>
+            <p><strong>Zangetsu-no-Zan:</strong> Toda vez que o usuário acerta qualquer ataque de raio, um eco elétrico surge instantaneamente ao lado do alvo para desferir golpe físico extra. <strong>Kaden-Shiki:</strong> Acumula carga a cada acerto. Chegar a 100% força um Overcharge involuntário (1 uso sem custo, mas causa recuo de 10% do HP e resfriamento de 10 segundos).</p>
+        </div>
+
+        <!-- Nível 2 -->
+        <div class="skill-card">
+            <span class="level-tag">Nível 2</span>
+            <h3>Shinkeikei-Fūin (Trava Neural) - Raio Azul</h3>
+            <div class="skill-info">
+                <span><strong>Tipo:</strong> Alvo Único / Sabotagem</span>
+                <span><strong>Iniciativa:</strong> 18</span>
+                <span><strong>Cosmo:</strong> 15</span>
+                <span><strong>Dano:</strong> 5 (Foco em controle)</span>
+            </div>
+            <p>Dispara micro-faísca azul na nuca ou espinha dorsal. Trava as vias de Cosmo e paralisa dedos e cordas vocais por 10 a 15 segundos, impedindo magias e fala.</p>
+        </div>
+
+        <!-- Nível 3 -->
+        <div class="skill-card">
+            <span class="level-tag">Nível 3</span>
+            <h3>Raijin-Kōshin (Impulso Divino) - Transformação (GodSpeed)</h3>
+            <div class="skill-info">
+                <span><strong>Tipo:</strong> Buff Corporal (30s)</span>
+                <span><strong>Iniciativa:</strong> +10 bônus contínuo</span>
+                <span><strong>Cosmo:</strong> 20% do Máximo</span>
+                <span><strong>Dano:</strong> Variável</span>
+            </div>
+            <p>Sobrecarga elétrica inspirada no GodSpeed. Concede: <em>Passo Relâmpago</em> (deslocamento instantâneo), <em>Aura Eletromagnética</em> (desvia metal) e <em>Impulso Estático</em> (paralisia de 2s ao toque).</p>
+        </div>
+
+        <!-- Nível 4 -->
+        <div class="skill-card">
+            <span class="level-tag">Nível 4</span>
+            <h3>Kyokusei-Chōwa (Polaridade) - Raio Verde</h3>
+            <div class="skill-info">
+                <span><strong>Tipo:</strong> Suporte / Controle Magnético</span>
+                <span><strong>Iniciativa:</strong> 14</span>
+                <span><strong>Cosmo:</strong> 25</span>
+                <span><strong>Dano:</strong> Média de 30 (Colisão)</span>
+            </div>
+            <p>Aplica cargas magnéticas opostas ou iguais em objetos ou criaturas. Cargas opostas atraem violentamente (ótimo para desarmar), e cargas iguais repelem de forma explosiva.</p>
+        </div>
+
+        <!-- Nível 5 -->
+        <div class="skill-card">
+            <span class="level-tag">Nível 5</span>
+            <h3>Shōkan: Akajishi (Invocação: Guepardo Vermelho)</h3>
+            <div class="skill-info">
+                <span><strong>Tipo:</strong> Invocação Glasscannon (10% PV)</span>
+                <span><strong>Iniciativa:</strong> 16</span>
+                <span><strong>Cosmo:</strong> 10% do Máximo</span>
+                <span><strong>Dano:</strong> Base 40 (+10 por metro percorrido)</span>
+            </div>
+            <p>Fera de raio vermelho que corre exclusivamente em linha reta rumo ao alvo. Não se desfaz no hit. Quanto mais corre antes de colidir, mais o dano corrosivo escala. Quica em ângulos retos em obstáculos.</p>
+        </div>
+
+        <!-- Nível 6 -->
+        <div class="skill-card">
+            <span class="level-tag">Nível 6</span>
+            <h3>Raiton-Sōgō (Garra do Relâmpago) - Raio Vermelho</h3>
+            <div class="skill-info">
+                <span><strong>Tipo:</strong> Alvo Único / Corpo a Corpo</span>
+                <span><strong>Iniciativa:</strong> 7</span>
+                <span><strong>Cosmo:</strong> 35</span>
+                <span><strong>Dano:</strong> 120 (Bruto e Corrosivo)</span>
+            </div>
+            <p>Envolve o braço em plasma vermelho escuro. Golpe corpo a corpo destrói a guarda e possui 50% de chance de fritar, entortar ou destruir a arma ou escudo de bloqueio do inimigo.</p>
+        </div>
+
+        <!-- Nível 7 -->
+        <div class="skill-card">
+            <span class="level-tag">Nível 7</span>
+            <h3>Taiki-Kiretsu (Fratura Atmosférica) - Raio Vermelho</h3>
+            <div class="skill-info">
+                <span><strong>Tipo:</strong> Área / Controle de Solo</span>
+                <span><strong>Iniciativa:</strong> 10</span>
+                <span><strong>Cosmo:</strong> 45</span>
+                <span><strong>Dano:</strong> 25 por segundo contínuo</span>
+            </div>
+            <p>Projeta teia eletrostática no solo que corrói o chão. A teia muda de posição periodicamente, aplicando sangramento elétrico e lentidão severa a quem pisar.</p>
+        </div>
+
+        <!-- Nível 8 -->
+        <div class="skill-card">
+            <span class="level-tag">Nível 8</span>
+            <h3>Shōkan: Aonezumi (Invocação: Chinchila Azul)</h3>
+            <div class="skill-info">
+                <span><strong>Tipo:</strong> Invocação Suporte (50% PV)</span>
+                <span><strong>Iniciativa:</strong> 20</span>
+                <span><strong>Cosmo:</strong> 10% do Máximo</span>
+                <span><strong>Dano:</strong> Nulo (Sabotagem)</span>
+            </div>
+            <p>Chinchila microscópica imperceptível. Possui o <em>Marcador de Tempestades</em> (cria pontos de queda de raio para overcharge seguro ou dano em área) e <em>Curto-Circuito Mágico</em> (desativa itens mágicos inimigos por 30s).</p>
+        </div>
+
+        <!-- Nível 9 -->
+        <div class="skill-card">
+            <span class="level-tag">Nível 9</span>
+            <h3>Kongen-Kyōkō (Dobra Primordial) - Universal</h3>
+            <div class="skill-info">
+                <span><strong>Tipo:</strong> Manipulação Livre do Ambiente</span>
+                <span><strong>Iniciativa:</strong> 12</span>
+                <span><strong>Cosmo:</strong> 10 a 20</span>
+                <span><strong>Dano:</strong> Variável criativo</span>
+            </div>
+            <p><strong>Controle Básico:</strong> Exige fontes externas (postes, fiações, atrito). Levita metais de até <strong>15 kg</strong>, redireciona correntes de até <strong>10.000 volts</strong> em um raio esférico de <strong>15 metros</strong>. <em>(Evolui no Nível 15 para Controle Refinado: 3 toneladas, 150m e raios de tempestades).</em></p>
+        </div>
+
+        <!-- Nível 10 -->
+        <div class="skill-card">
+            <span class="level-tag">Nível 10</span>
+            <h3>Jiryoku-Assaku-Chitai (Zona de Esmagamento Magnético) - Raio Verde</h3>
+            <div class="skill-info">
+                <span><strong>Tipo:</strong> Área / Debuff de Mobilidade</span>
+                <span><strong>Iniciativa:</strong> 11</span>
+                <span><strong>Cosmo:</strong> 60</span>
+                <span><strong>Dano:</strong> Nenhum (Pressão Magnética)</span>
+            </div>
+            <p>Magnetiza o solo em um raio de 20m. Alvos com armaduras ou metais pesados têm o peso multiplicado dezenas de vezes. Voo é cancelado instantaneamente e o movimento fica reduzido a rastejo.</p>
+        </div>
+
+        <!-- Nível 12 -->
+        <div class="skill-card">
+            <span class="level-tag">Nível 12</span>
+            <h3>Gōka-no-Yari (Lança Soberana) - Raio Vermelho</h3>
+            <div class="skill-info">
+                <span><strong>Tipo:</strong> Alvo Único / Projétil Teleguiado</span>
+                <span><strong>Iniciativa:</strong> 15</span>
+                <span><strong>Cosmo:</strong> 80</span>
+                <span><strong>Dano:</strong> 180 (Perfurante Extremo)</span>
+            </div>
+            <p>Dispara lança de eletricidade vermelha pura. Teleguiada: se o alvo tentar esquiva de última hora, a lança faz uma curva fechada no ar para atingi-lo no ponto cego.</p>
+        </div>
+
+        <!-- Nível 14 -->
+        <div class="skill-card">
+            <span class="level-tag">Nível 14</span>
+            <h3>Shōkan: Hakukō-Kabutomushi (Invocação: Besouro Hércules Branco)</h3>
+            <div class="skill-info">
+                <span><strong>Tipo:</strong> Invocação Tank (250% PV)</span>
+                <span><strong>Iniciativa:</strong> 4</span>
+                <span><strong>Cosmo:</strong> 15% do Máximo</span>
+                <span><strong>Dano:</strong> 100 na explosão final</span>
+            </div>
+            <p>Para-raios orgânico ambulante que intercepta ataques mágicos e projéteis direcionados ao invocador. Detona o <em>Flashbang Massivo</em> ao atingir o limite, quebrando escudos e cegando por 15s.</p>
+        </div>
+
+        <!-- Nível 16 -->
+        <div class="skill-card">
+            <span class="level-tag">Nível 16</span>
+            <h3>Zettai-Soku (Velocidade Absoluta) - Oportunidade</h3>
+            <div class="skill-info">
+                <span><strong>Tipo:</strong> Área / Dash (Metade da Velocidade do Trovão)</span>
+                <span><strong>Iniciativa:</strong> 25 (Prioridade Máxima)</span>
+                <span><strong>Cosmo:</strong> 25% + 5% por curva</span>
+                <span><strong>Dano:</strong> Sequência física completa</span>
+            </div>
+            <p>Permite sequência relâmpago de golpes físicos em até 15 alvos num raio de 1km (distância máxima de 10m entre si na rota). Magias não podem ser conjuradas durante o trajeto. Pode ser usado como dash de 1km.</p>
+        </div>
+
+        <!-- Nível 18 -->
+        <div class="skill-card">
+            <span class="level-tag">Nível 18</span>
+            <h3>Denki-Kōsei (Ressuscitação Elétrica) - Raio Branco</h3>
+            <div class="skill-info">
+                <span><strong>Tipo:</strong> Suporte Crítico / Reanimação</span>
+                <span><strong>Iniciativa:</strong> Instantânea / Reativa</span>
+                <span><strong>Cosmo:</strong> 0 (Próprio, 1x/dia) / 30% (Aliados)</span>
+                <span><strong>Dano:</strong> Nenhum (Cura de Emergência)</span>
+            </div>
+            <p>Ao chegar a 0 de PV, dispara carga automática de alta voltagem no coração, ressuscitando com 5% de PV (1x/dia em si mesmo). Gasta 30% de Cosmo para desfibrilar e reviver aliados manualmente.</p>
+        </div>
+
+        <!-- Nível 20 -->
+        <div class="skill-card">
+            <span class="level-tag">Nível 20</span>
+            <h3>Shōkan: Kirin (Invocação: Kirin Roxo) - O Domínio Supremo</h3>
+            <div class="skill-info">
+                <span><strong>Tipo:</strong> Invocação Lendária (200% PV) / Execução</span>
+                <span><strong>Iniciativa:</strong> 2 (Lenta preparação)</span>
+                <span><strong>Cosmo:</strong> 50% do Máximo</span>
+                <span><strong>Dano:</strong> 300 interno/segundo + Morte por Execução</span>
+            </div>
+            <p>A forma máxima. Transforma o clima em tempestade roxa apocalíptica, zerando o custo de Cosmo das habilidades de raio do usuário. Culmina no <em>Rugido da Extinção</em>: feixe roxo do céu que causa dano interno implacável direto nos órgãos.</p>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>Umbremacia RPG &copy; Todos os direitos reservados. Desenvolvido para campanhas orgânicas.</p>
+    </footer>
+
+</body>
+</html>
